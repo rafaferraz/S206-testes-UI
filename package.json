@@ -1,0 +1,22 @@
+{
+  "name": "testes_ui",
+  "version": "1.0.0",
+  "description": "Testes de UI com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaferraz/S206-testes-UI.git"
+  },
+  "author": "Rafaela Ferraz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaferraz/S206-testes-UI/issues"
+  },
+  "homepage": "https://github.com/rafaferraz/S206-testes-UI#readme",
+  "dependencies": {
+    "cypress": "^8.7.0"
+  }
+}
