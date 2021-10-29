@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-29T02:17:18.880Z",
+    "end": "2021-10-29T02:17:40.715Z",
+    "duration": 21835,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f7f01096-3fc9-42e1-90dd-1bad4c0b343b",
+      "title": "",
+      "fullFile": "cypress/integration/testes_ui/detran.spec.js",
+      "file": "cypress/integration/testes_ui/detran.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+          "title": "Cenário de teste: Testar funcionalidades do site do Detran MG.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Caso de teste: Verificar resultado do exame de legislação",
+              "fullTitle": "Cenário de teste: Testar funcionalidades do site do Detran MG. Caso de teste: Verificar resultado do exame de legislação",
+              "timedOut": null,
+              "duration": 6790,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.detran.mg.gov.br');\ncy.get('.navbar-toggler').click();\ncy.get('.menu-icons-habilitacao > .nav-link').click();\ncy.get('.menu-icons-habilitacao > .dropdown-menu > .row > .col-lg-2.icon-posicao2 > :nth-child(5) > .btn-menu > .link-menu').click();\ncy.get('.menu-list > :nth-child(4) > .btn-menu').click();\ncy.get('#cpf').type('01645571645');\ncy.get('#data-nascimento').type('14/05/2000');\ncy.get('.form-aguarde > .btn-primary').click();",
+              "err": {},
+              "uuid": "38c16eb7-ddb7-4c45-9e1c-f59922772c35",
+              "parentUUID": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Verificar pontuação na carteira com CPF inválido",
+              "fullTitle": "Cenário de teste: Testar funcionalidades do site do Detran MG. Caso de teste: Verificar pontuação na carteira com CPF inválido",
+              "timedOut": null,
+              "duration": 2612,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.detran.mg.gov.br');\ncy.get('.navbar-toggler').click();\ncy.get('.menu-icons-infracoes > .nav-link').click();\ncy.get('.menu-icons-infracoes > .dropdown-menu > .row > :nth-child(2) > :nth-child(2) > .btn-menu > .link-menu').click();\ncy.get('#cpf').type('00000000000');\ncy.get('#datanascimento').type('14/05/2000');\ncy.get('#dataprimeirahabilitacao').type('14/05/2020');\ncy.get('.form-aguarde > .btn-primary').click();",
+              "err": {},
+              "uuid": "865d2626-5db9-4665-95ba-cf18d15fdfd2",
+              "parentUUID": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Buscar clínicas AMEP credenciadas em Belo Horizonte",
+              "fullTitle": "Cenário de teste: Testar funcionalidades do site do Detran MG. Caso de teste: Buscar clínicas AMEP credenciadas em Belo Horizonte",
+              "timedOut": null,
+              "duration": 2350,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.detran.mg.gov.br');\ncy.get('.navbar-toggler').click();\ncy.get('.menu-icons-parceiros > .nav-link').click();\ncy.get('.menu-icons-parceiros > .dropdown-menu > .row > .col-lg-2.icon-posicao2 > :nth-child(2) > .btn-menu').click();\ncy.get('#nomeclinica').type('AMEP');\ncy.get('.form-aguarde > .btn-primary').click();",
+              "err": {},
+              "uuid": "1e731526-a897-4b6b-a86c-482511a0b57f",
+              "parentUUID": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Buscar unidades de atendimento em Pouso Alegre",
+              "fullTitle": "Cenário de teste: Testar funcionalidades do site do Detran MG. Caso de teste: Buscar unidades de atendimento em Pouso Alegre",
+              "timedOut": null,
+              "duration": 1516,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.detran.mg.gov.br');\ncy.get('.navbar-toggler').click();\ncy.get('#unidade-atendimento').type('Pouso Alegre');\ncy.get('#btn-buscar-unidade > .svg-inline--fa').click();",
+              "err": {},
+              "uuid": "1ce35239-4367-4324-9b40-3ba7467195f8",
+              "parentUUID": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Buscar por certidão negativa de propriedade",
+              "fullTitle": "Cenário de teste: Testar funcionalidades do site do Detran MG. Caso de teste: Buscar por certidão negativa de propriedade",
+              "timedOut": null,
+              "duration": 3081,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.detran.mg.gov.br');\ncy.get('#q').type('certidão negativa');\ncy.get('#btn-buscar').click();\ncy.get('[href=\"/veiculos/certidoes-pesquisa/certidao-negativa-de-propriedade\"] > .row > :nth-child(1) > .d-flex').click();",
+              "err": {},
+              "uuid": "d5a8a5e8-4289-4e96-b5b1-36b84f7e03b0",
+              "parentUUID": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Agendar exame de legislação",
+              "fullTitle": "Cenário de teste: Testar funcionalidades do site do Detran MG. Caso de teste: Agendar exame de legislação",
+              "timedOut": null,
+              "duration": 3867,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.detran.mg.gov.br');\ncy.get('.navbar-toggler').click();\ncy.get('.menu-icons-habilitacao > .nav-link').click();\ncy.get('.menu-icons-habilitacao > .dropdown-menu > .row > .col-lg-2.icon-posicao2 > :nth-child(5) > .btn-menu > .link-menu').click();\ncy.get('.menu-list > :nth-child(3) > .btn-menu').click();\ncy.get('#cpf').type('016.455.716-45');\ncy.get('#data-nascimento').type('14/05/2000');\ncy.get('.form-aguarde > .btn-primary').click();",
+              "err": {},
+              "uuid": "57f70bdf-b98c-4121-9c4e-31e5afd0114b",
+              "parentUUID": "1573bbd7-9a2e-4bb1-851f-408a9787e193",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "38c16eb7-ddb7-4c45-9e1c-f59922772c35",
+            "865d2626-5db9-4665-95ba-cf18d15fdfd2",
+            "1e731526-a897-4b6b-a86c-482511a0b57f",
+            "1ce35239-4367-4324-9b40-3ba7467195f8",
+            "d5a8a5e8-4289-4e96-b5b1-36b84f7e03b0",
+            "57f70bdf-b98c-4121-9c4e-31e5afd0114b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20216,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
